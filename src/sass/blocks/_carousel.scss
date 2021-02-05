@@ -18,9 +18,14 @@
     left: -66px;
     border: none;
     background-color: #fff;
+    outline: none;
     img {
         width: 30px;
         height: 50px;
+    }
+    &:active, &:focus, &:active {
+        border: none;
+        outline: none;
     }
 }
 .slick-next {
@@ -61,20 +66,19 @@
     }
 }
 @media (max-width: 769px) {
-
-    .slick-slide {
-        img {
-            max-width: 660px;
+    .carousel {
+        padding: 60px 0;
+        &__inner {
+            min-height: auto;
         }
     }
-
-}
-@media (max-width: 769px) {
-
     .slick-slide {
         img {
             max-width: 580px;
         }
+    }
+    .slick-dots {
+        padding-left: 0 !important;
     }
 
 }
@@ -95,7 +99,6 @@
         }
     }
     .slick-dots {
-        padding-left: 0 !important;
         display: flex !important;
         align-items: center;
         justify-content: space-between;
