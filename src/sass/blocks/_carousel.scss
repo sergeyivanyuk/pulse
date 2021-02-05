@@ -1,0 +1,116 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        min-height: 750px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+.slick-slide {
+    img {
+        margin: 0 auto;
+    }
+}
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -66px;
+    border: none;
+    background-color: #fff;
+    img {
+        width: 30px;
+        height: 50px;
+    }
+}
+.slick-next {
+    left: auto;
+    right: -66px;
+    img {
+        width: 30px;
+        height: 50px;
+    }
+}
+@media (max-width: 1200px) {
+    .slick-prev, .slick-next {
+        left: auto;
+        // right: auto;
+    }
+    .slick-next {
+        right: -20px;
+    }
+}
+@media (max-width: 992px) {
+    .slick-dots {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        li {
+            margin-top: 10px;
+            button {
+                width: 100px;
+                height: 100px;
+                border: 1px solid #000;
+                outline: none;
+                background: linear-gradient(45deg #610b0b to #eca6a6);
+                border-radius: 100%;
+
+            }
+        }
+    }
+}
+@media (max-width: 769px) {
+
+    .slick-slide {
+        img {
+            max-width: 660px;
+        }
+    }
+
+}
+@media (max-width: 769px) {
+
+    .slick-slide {
+        img {
+            max-width: 580px;
+        }
+    }
+
+}
+@media (max-width: 575px) {
+
+    .slick-slide {
+        img {
+            max-width: 420px;
+        }
+    }
+
+}
+@media (max-width: 380px) {
+
+    .slick-slide {
+        img {
+            max-width: 320px;
+        }
+    }
+    .slick-dots {
+        padding-left: 0 !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        li {
+            margin-top: 10px;
+            button {
+                width: 60px;
+                height: 60px;
+                border: 1px solid #000;
+                outline: none;
+                background: linear-gradient(45deg #610b0b to #eca6a6);
+                border-radius: 100%;
+
+            }
+        }
+    }
+}

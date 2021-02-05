@@ -1,0 +1,33 @@
+.advantage {
+    min-height: 470px;
+    background-color: #F6F6F6;
+    padding-top: 70px;
+    padding-bottom: 65px;
+    color: #0D0D0D;
+    &__inner {
+        margin-top: 60px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__item {
+        img {
+            width: 70px;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            max-width: 280px;
+        }
+    }
+    &__link {
+        color: #FF0000;
+        text-transform: uppercase;
+    }
+}
