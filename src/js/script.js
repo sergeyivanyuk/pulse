@@ -26,7 +26,7 @@ $(document).ready(function(){
     });
 
 
-    function toggleSlide(item) {
+    function toggleTab(item) {
       $(item).each(function(i) {
         $(this).on('click', function (e) {
           e.preventDefault();
@@ -36,8 +36,8 @@ $(document).ready(function(){
       });
     };
 
-    toggleSlide('.catalog-item__link');
-    toggleSlide('.catalog-item__back');
+    toggleTab('.catalog-item__link');
+    toggleTab('.catalog-item__back');
 
     // modal
     $('[data-modal=consultation]').on('click', function() {
