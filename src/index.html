@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -67,7 +68,7 @@
                     <p>Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
                 </div>
                 <div class="advantage__item">
-                    <img src="img/advantage/heart.png" alt="heart">
+                    <img class="pulse-icon" src="img/advantage/heart.png" alt="heart">
                     <h3>Заботимся о здоровье</h3>
                     <p>Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</p>
                 </div>
@@ -405,7 +406,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
             <div class="reviews__inner">
-                <div class="reviews__item">
+                <div class="reviews__item wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/reviews/item-1.png" alt="Ирина" class="reviews__img">
                     <div class="reviews-content">
                         <h3 class="reviews-content__title">Ирина Иванченко</h3>
@@ -417,7 +418,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="reviews__item">
+                <div class="reviews__item wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/reviews/item-2.png" alt="Иван" class="reviews__img">
                     <div class="reviews-content">
                         <h3 class="reviews-content__title">Иван Сёмочкин</h3>
@@ -428,7 +429,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="reviews__item">
+                <div class="reviews__item wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/reviews/item-3.png" alt="Юлия" class="reviews__img">
                     <div class="reviews-content">
                         <h3 class="reviews-content__title">Юлия Дашкина</h3>
@@ -514,6 +515,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/mask.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
